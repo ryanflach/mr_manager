@@ -19,6 +19,8 @@ class TaskManager
 
   def raw_tasks
     database.transaction do
+      database['total'] = 0 if database['tasks'].empty?
+      database['tasks'][0]['id'] = 1 if database['tasks'].count == 1
       database['tasks'] || []
     end
   end
@@ -34,4 +36,15 @@ class TaskManager
   def find(id)
     Task.new(raw_task(id))
   end
+
+  def remove(id)
+    database.transaction do
+      database['tasks'].delete_at(id - 1)
+      database['total'] -= 1
+      database['tasks'].each do |task|
+        task['id'] -= 1
+      end
+    end
+  end
+  
 end
