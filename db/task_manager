@@ -2,5 +2,5 @@
 tasks:
 - id: 1
   title: Eat Strawberry Pie
-  description: It would be rude not to; your mom made it.
+  description: Your mom made it; it would be rude not to (and it's delicious).
 total: 1

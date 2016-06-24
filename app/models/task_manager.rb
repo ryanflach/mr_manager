@@ -42,9 +42,9 @@ class TaskManager
       database['tasks'].delete_at(id - 1)
       database['total'] -= 1
       database['tasks'].each do |task|
-        task['id'] -= 1
+        task['id'] -= 1 if task['id'] > id
       end
     end
   end
-  
+
 end

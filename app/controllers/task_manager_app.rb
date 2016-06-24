@@ -22,7 +22,7 @@ class TaskManagerApp < Sinatra::Base
   end
 
   post '/tasks/remove/:id' do |id|
-    task_manager.remove((task_manager.find(id.to_i).id))
+    task_manager.remove(id.to_i)
     redirect '/tasks'
   end
 
