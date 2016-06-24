@@ -1,4 +1,5 @@
 require 'yaml/store'
+require_relative 'task'
 
 class TaskManager
   attr_reader :database
