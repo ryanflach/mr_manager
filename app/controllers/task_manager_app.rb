@@ -9,4 +9,8 @@ class TaskManagerApp < Sinatra::Base
     @tasks = ['task1', 'task2', 'task3']
     erb :index
   end
+
+  get '/tasks/new' do
+    erb :new
+  end
 end

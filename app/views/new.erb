@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager: New Task</title>
+  </head>
+  <body>
+    <form action="/tasks" method="post">
+      <p>Enter a new task:</p>
+      <input type="text" name="task[title]" required="required" placeholder="Task name"/><br />
+      <textarea name="task[description]" required="required" placeholder="Task description"></textarea><br />
+      <input type="submit" value="Add Task"/>
+    </form>
+    <p><a href="/">Cancel and Return to Dashboard</a></p>
+  </body>
+
+</html>
