@@ -1,3 +1,6 @@
 ---
-tasks: []
-total: 0
+tasks:
+- id: 1
+  title: Eat Strawberry Pie
+  description: It would be rude not to; your mom made it.
+total: 1

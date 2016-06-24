@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Task Manager: New Task</title>
+    <link type="text/css" rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <form action="/tasks/add" method="post">
@@ -10,7 +11,7 @@
       <textarea name="task[description]" required="required" placeholder="Task description"></textarea><br />
       <input type="submit" value="Add Task"/>
     </form>
-    <p><a href="/">Cancel and Return to Dashboard</a></p>
+    <p><a class="return" href="/">Cancel and Return to Dashboard</a></p>
   </body>
 
 </html>

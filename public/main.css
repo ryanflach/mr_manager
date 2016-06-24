@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=============
+Custom Styles
+=============
+*/
+
+body {
+	background-color: #4a689f;
+	font-family: Verdana, Arial, sans-serif;
+	margin: 10px
+}
+
+h1 {
+	color: #fffeb6;
+	font-size: 2em;
+	font-weight: 400;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #e75e6b;
+}
+
+h3 {
+	font-size: 1.3em;
+	color: #efed61;
+	margin-left: 10px;
+}
+
+p {
+	color: #efed61;
+	margin-left: 10px;
+}
+
+/*
+=============
+Forms
+=============
+*/
+input[type="text"],
+textarea {
+	width: 25%;
+	margin: 10px 0 10px 10px;
+}
+
+input[type="submit"] {
+	color: #c00;
+	margin: 20px 0 0 10px;
+}
+
+/*
+=============
+Links
+=============
+*/
+
+a {
+	text-decoration: none;
+	font-size: 1.3em;
+	margin: 10px;
+	color: #fbb4ba;
+	display: block;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #efed61;
+}
+
+.return {
+	font-size: 85%;
+	margin-left: 0;
+	padding: 10px 0 0 0;
+	border-top: 1px dashed #999;
+}
+
+/*
+=============
+Tasks
+=============
+*/
+.task {
+	display: inline;
+}
+
+.task_title {
+	margin: 20px 0 20px 10px;
+}

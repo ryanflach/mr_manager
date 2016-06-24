@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Task Manager: Tasks</title>
+    <link type="text/css" rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <h1>All Tasks</h1>
 
     <% @tasks.each do |task| %>
-      <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+      <h3><%= task.id %>: <a class="task" href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
     <% end %>
 
-    <p><a href="/">Return to Dashboard</a></p>
+    <p><a class="return" href="/">Return to Dashboard</a></p>
   </body>
 </html>
