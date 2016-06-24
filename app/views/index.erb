@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager: Tasks</title>
+  </head>
+  <body>
+    <h1>All Tasks</h1>
+
+    <% @tasks.each do |task| %>
+      <h3><%= task %></h3>
+    <% end %>
+
+    <p><a href="/">Return to Dashboard</a></p>
+  </body>
+</html>
